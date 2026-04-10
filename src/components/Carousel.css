@@ -1,0 +1,65 @@
+#carrossel { padding-bottom: 2rem; }
+
+.carrossel-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.carrossel-slide {
+  width: 100%;
+  height: 420px;
+}
+
+.carrossel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Setas */
+.carrossel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,.45);
+  color: #fff;
+  border: none;
+  width: 42px; height: 42px;
+  font-size: 26px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  border-radius: 50%;
+  transition: background .2s;
+}
+.carrossel-arrow:hover { background: rgba(0,0,0,.75); }
+.carrossel-prev { left: 14px; }
+.carrossel-next { right: 14px; }
+
+/* Dots */
+.carrossel-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  z-index: 5;
+}
+.carrossel-dot {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.45);
+  border: none;
+  cursor: pointer;
+  transition: background .2s;
+}
+.carrossel-dot.active { background: #fff; }
+
+@media (max-width: 768px) {
+  .carrossel-slide { height: 220px; }
+}

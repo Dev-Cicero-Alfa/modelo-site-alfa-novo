@@ -1,0 +1,44 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary: #42ad73;
+  --black: #111;
+  --white: #fff;
+  --gray-text: #333;
+  --border-light: #ddd;
+}
+
+html { font-size: 100%; overflow-x: hidden; }
+
+body {
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+  color: var(--gray-text);
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+  max-width: calc(1150px + 3rem);
+}
+
+.home-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+}

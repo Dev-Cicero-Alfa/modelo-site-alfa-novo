@@ -1,0 +1,94 @@
+#filter { padding: 17px 0 20px; }
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.home-content .title {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.home-content .busca {
+  width: 42%;
+  font-family: inherit;
+  background: #fff;
+  border: none;
+  color: #777;
+  font-size: 13px;
+  border-radius: 20px;
+  outline: 0;
+  padding: 8px 18px;
+}
+.filter-dropdowns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: .75rem;
+  margin-bottom: 10px;
+}
+.select-wrapper { position: relative; }
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 36px;
+  padding: 0 32px 0 14px;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 13px;
+  color: #444;
+  cursor: pointer;
+  outline: none;
+}
+.select-wrapper::after {
+  content: '▼';
+  font-size: 9px;
+  color: #666;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.filter-tipos-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.filter-tipos-label { color: #fff; font-size: 13px; white-space: nowrap; }
+.filter-tipos-options { display: flex; gap: 1.2rem; }
+.filter-tipos-options label {
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.filter-tipos-options input[type="radio"] { accent-color: #42ad73; width: 14px; height: 14px; }
+.button_filter {
+  margin-left: auto;
+  background: #42ad73;
+  color: #fff;
+  padding: 0 28px;
+  height: 36px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  transition: filter .15s;
+}
+.button_filter:hover { filter: brightness(.9); }
+
+@media (max-width: 768px) {
+  .home-content { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .home-content .busca { width: 100%; }
+  .filter-dropdowns { grid-template-columns: 1fr 1fr; }
+  .filter-tipos-row { flex-wrap: wrap; }
+}
