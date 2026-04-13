@@ -61,7 +61,7 @@
 #menu .links-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -77,24 +77,25 @@
   white-space: nowrap;
 }
 #menu .links-wrapper-item:hover { background: rgba(255,255,255,.1); }
+#menu .links-wrapper > li:first-child .links-wrapper-item { padding-left: 0; }
 .leiloes-arrow { font-size: 10px; margin-left: 4px; }
 
 /* Input de busca no nav */
 .nav-busca-item { display: flex; align-items: center; padding: 0 12px; }
 .nav-busca {
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.25);
-  color: #fff;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #333;
   padding: 8px 18px;
   border-radius: 20px;
   font-family: inherit;
   font-size: 13px;
   width: 280px;
   outline: none;
-  transition: background .2s, border-color .2s;
+  transition: box-shadow .2s;
 }
-.nav-busca::placeholder { color: rgba(255,255,255,.5); }
-.nav-busca:focus { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.5); }
+.nav-busca::placeholder { color: #aaa; }
+.nav-busca:focus { box-shadow: 0 0 0 2px rgba(66,173,115,.4); }
 
 /* ==============================
    MOBILE

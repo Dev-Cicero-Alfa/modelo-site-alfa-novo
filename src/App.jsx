@@ -5,6 +5,7 @@ import Filter from './components/Filter'
 import Carousel from './components/Carousel'
 import Destaques from './components/Destaques'
 import Newsletter from './components/Newsletter'
+import BlogYoutube from './components/BlogYoutube'
 import Footer from './components/Footer'
 import LotePage from './components/LotePage'
 
@@ -16,6 +17,8 @@ function Home() {
       <main>
         <Filter />
         <Carousel />
+        <Newsletter />
+        <BlogYoutube />
         <Destaques />
         <Newsletter />
       </main>

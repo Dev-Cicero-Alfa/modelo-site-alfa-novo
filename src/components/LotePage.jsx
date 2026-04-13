@@ -156,37 +156,44 @@ export default function LotePage() {
 
             <div className="lote-descricao-box">
               <h3>Descrição do lote</h3>
-              <p>{lote.descricao}</p>
+              <ul className="lote-topicos">
+                {lote.topicos.map((t, i) => (
+                  <li key={i}>
+                    <span className="lote-topico-label">{t.label}:</span> {t.texto}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
-          {/* Mapa */}
-          <div className="lote-mapa-box">
-            <iframe
-              title="Localização do imóvel"
-              src={`https://maps.google.com/maps?q=${encodeURIComponent(lote.endereco)}&output=embed`}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          {/* Mapa + Encerramento lado a lado */}
+          <div className="lote-mapa-enc-row">
+            <div className="lote-mapa-box">
+              <iframe
+                title="Localização do imóvel"
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(lote.endereco)}&output=embed`}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
 
-          {/* Countdown */}
-          <div className="lote-encerramento">
-            <span className="lote-enc-label">Encerramento</span>
-            <div className="lote-enc-timer">
-              {[
-                [countdown.dias,     'dia(s)'],
-                [countdown.horas,    'hora(s)'],
-                [countdown.minutos,  'minuto(s)'],
-                [countdown.segundos, 'segundo(s)'],
-              ].map(([val, label], i, arr) => (
-                <div className="lote-enc-unit" key={label}>
-                  <div className="lote-enc-num">{String(val).padStart(2, '0')}</div>
-                  <div className="lote-enc-suffix">{label}</div>
-                  {i < arr.length - 1 && <span className="lote-enc-sep">:</span>}
-                </div>
-              ))}
+            <div className="lote-encerramento">
+              <span className="lote-enc-label">Encerramento</span>
+              <div className="lote-enc-timer">
+                {[
+                  [countdown.dias,     'dia(s)'],
+                  [countdown.horas,    'hora(s)'],
+                  [countdown.minutos,  'minuto(s)'],
+                  [countdown.segundos, 'segundo(s)'],
+                ].map(([val, label], i, arr) => (
+                  <div className="lote-enc-unit" key={label}>
+                    <div className="lote-enc-num">{String(val).padStart(2, '0')}</div>
+                    <div className="lote-enc-suffix">{label}</div>
+                    {i < arr.length - 1 && <span className="lote-enc-sep">:</span>}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
