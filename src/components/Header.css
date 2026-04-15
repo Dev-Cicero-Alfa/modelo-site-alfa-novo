@@ -81,7 +81,7 @@
 .leiloes-arrow { font-size: 10px; margin-left: 4px; }
 
 /* Input de busca no nav */
-.nav-busca-item { display: flex; align-items: center; padding: 0 12px; }
+.nav-busca-item { display: flex; align-items: center; padding: 0 0 0 12px; flex: 1; }
 .nav-busca {
   background: #fff;
   border: 1px solid #ddd;
@@ -90,7 +90,7 @@
   border-radius: 20px;
   font-family: inherit;
   font-size: 13px;
-  width: 280px;
+  width: 100%;
   outline: none;
   transition: box-shadow .2s;
 }

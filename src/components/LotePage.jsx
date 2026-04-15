@@ -66,7 +66,7 @@ export default function LotePage() {
           {/* Badge tipo */}
           <div className="lote-tipo-bar">
             <span className="lote-badge-tipo">{lote.tipo}</span>
-            <span className="lote-badge-dot" />
+            <span className="lote-badge-dot">?</span>
           </div>
 
           {/* Processo / Horário / Local */}

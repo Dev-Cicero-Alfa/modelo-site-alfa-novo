@@ -23,7 +23,7 @@
 .blog-yt-ver-mais {
   font-size: 13px;
   font-weight: 600;
-  color: #42ad73;
+  color: #1a6ef5;
   letter-spacing: .03em;
   transition: opacity .2s;
 }
@@ -49,7 +49,7 @@
 .blog-card:hover {
   box-shadow: 0 6px 24px rgba(0,0,0,.4);
   transform: translateY(-2px);
-  border-color: rgba(66,173,115,.4);
+  border-color: rgba(26,110,245,.4);
 }
 
 .blog-card-img-wrap {
@@ -69,7 +69,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background: #42ad73;
+  background: #1a6ef5;
   color: #fff;
   font-size: 11px;
   font-weight: 700;
@@ -157,6 +157,58 @@
   display: block;
 }
 
+/* WhatsApp banner */
+.wa-banner {
+  background: #1a2a1a;
+  border: 1px solid rgba(37,211,102,.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 36px;
+}
+
+.wa-banner-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wa-banner-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.wa-banner-desc {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: rgba(255,255,255,.72);
+  margin: 0;
+}
+
+.wa-btn {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 28px;
+  border-radius: 24px;
+  letter-spacing: .04em;
+  transition: background .2s, transform .15s;
+  width: fit-content;
+}
+.wa-btn:hover { background: #1db954; transform: scale(1.03); }
+
 /* ================================
    RESPONSIVO
 ================================ */
@@ -171,4 +223,6 @@
   .blog-cards-grid { grid-template-columns: 1fr; }
   .blog-yt-header { flex-direction: column; align-items: flex-start; gap: 6px; }
   .yt-banner-text { padding: 24px 20px; }
+  .wa-banner { flex-direction: column; padding: 24px 20px; gap: 16px; }
+  .wa-banner-icon svg { width: 48px; height: 48px; }
 }

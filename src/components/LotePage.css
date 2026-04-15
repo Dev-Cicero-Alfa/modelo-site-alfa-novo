@@ -20,6 +20,7 @@
 .lote-tipo-bar {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 12px;
 }
@@ -31,13 +32,20 @@
   padding: 4px 16px;
   letter-spacing: .06em;
   border-radius: 4px;
-  border: 1px solid rgba(255,255,255,.15);
+  border: none;
 }
 .lote-badge-dot {
-  width: 12px; height: 12px;
+  width: 20px; height: 20px;
   background: #e02020;
   border-radius: 50%;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 /* Info row: processo / horário / local */
@@ -86,12 +94,12 @@
   letter-spacing: .05em;
   font-size: 12px;
   text-transform: uppercase;
-  border: 1px solid #339960;
+  border: 2px solid #2d9960;
 }
 .lote-pracas-table td {
   padding: 11px 14px;
   text-align: center;
-  border: 1px solid rgba(255,255,255,.2);
+  border: 2px solid rgba(255,255,255,.35);
   color: #fff;
   font-weight: 500;
 }
