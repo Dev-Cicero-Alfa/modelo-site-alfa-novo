@@ -143,7 +143,7 @@
 
 /* Título do lote */
 .lote-titulo {
-  font-size: 38px;
+  font-size: 22px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 18px;
@@ -473,7 +473,7 @@
   .lote-info-cell:last-child { border-bottom: none; }
   .lote-enc-num { font-size: 22px; min-width: 32px; }
   .lote-btns-row { flex-direction: column; }
-  .lote-titulo { font-size: 26px; }
+  .lote-titulo { font-size: 18px; }
   .lote-encerramento { flex-direction: column; gap: 8px; }
 }
 @media (max-width: 480px) {
