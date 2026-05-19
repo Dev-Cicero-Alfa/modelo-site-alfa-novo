@@ -1,0 +1,296 @@
+/* ================================
+   CANAIS / DIVULGAÇÃO
+   WhatsApp em destaque + grid 2x2
+================================ */
+.canais-section {
+  padding: 0 0 56px;
+  background: #1c1c1c;
+}
+
+.canais-header-bar {
+  background: #000;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  padding: 26px 0;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.canais-section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .03em;
+  margin-bottom: 8px;
+}
+
+.canais-section-sub {
+  font-size: 14px;
+  color: rgba(255, 255, 255, .65);
+  line-height: 1.6;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* ================================
+   WHATSAPP — Banner em destaque
+================================ */
+.canais-featured-row {
+  margin-bottom: 28px;
+}
+
+.wa-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.wa-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .02em;
+  margin: 0;
+}
+
+.wa-section-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a6ef5;
+  letter-spacing: .03em;
+  transition: opacity .2s;
+}
+.wa-section-link:hover { opacity: .75; }
+
+.wa-banner-card {
+  background: #1a2a1a;
+  border: 1px solid rgba(37, 211, 102, .25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 26px 32px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.wa-banner-card:hover {
+  border-color: rgba(37, 211, 102, .5);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, .15);
+}
+
+.wa-banner-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-banner-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.wa-banner-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.wa-banner-desc {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, .72);
+  margin: 0;
+}
+
+.wa-banner-btn {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 26px;
+  border-radius: 24px;
+  letter-spacing: .04em;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  width: fit-content;
+  margin-top: 6px;
+}
+.wa-banner-btn:hover {
+  background: #1db954;
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, .3);
+}
+
+/* ================================
+   GRID 2x2 — Cards estilo "post" (imagem + texto)
+================================ */
+.canais-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card base */
+.canal-card {
+  background: #2e2e2e;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .1);
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  transition: box-shadow .2s, transform .2s, border-color .2s;
+}
+.canal-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .45);
+  transform: translateY(-3px);
+}
+
+/* Área superior — "imagem" (gradiente + ícone grande) */
+.canal-card-image {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.canal-card-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(0,0,0,.45) 100%);
+  pointer-events: none;
+}
+.canal-card-icon {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.7);
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, .4));
+  transition: transform .35s ease;
+}
+.canal-card:hover .canal-card-icon {
+  transform: scale(1.85);
+}
+
+/* Tag no canto (badge sobre a "imagem") */
+.canal-card-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: .05em;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, .45);
+}
+
+/* Gradientes das "imagens" por variante */
+.canal-image-yt     { background: linear-gradient(135deg, #4a0a0a 0%, #2a0505 100%); }
+.canal-image-blog   { background: linear-gradient(135deg, #5a3d05 0%, #2e1f02 100%); }
+.canal-image-curso  { background: linear-gradient(135deg, #0a2d6e 0%, #051538 100%); }
+.canal-image-lancei { background: linear-gradient(135deg, #2c0e7a 0%, #150638 100%); }
+
+/* Corpo do card */
+.canal-card-body {
+  padding: 18px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.canal-titulo {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.canal-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, .65);
+  margin: 0;
+  flex: 1;
+}
+
+.canal-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 9px 18px;
+  border-radius: 22px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .04em;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  width: fit-content;
+}
+
+/* Variant: YouTube */
+.canal-yt:hover { border-color: rgba(255, 0, 0, .45); }
+.canal-btn-yt { background: #ff0000; }
+.canal-card:hover .canal-btn-yt {
+  background: #cc0000;
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(255, 0, 0, .3);
+}
+
+/* Variant: Blog */
+.canal-blog:hover { border-color: rgba(245, 165, 26, .5); }
+.canal-btn-blog { background: #f5a51a; color: #1c1c1c; }
+.canal-card:hover .canal-btn-blog {
+  background: #e09515;
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(245, 165, 26, .3);
+}
+
+/* Variant: Curso */
+.canal-curso:hover { border-color: rgba(26, 110, 245, .45); }
+.canal-btn-curso { background: #1a6ef5; }
+.canal-card:hover .canal-btn-curso {
+  background: #155bcb;
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(26, 110, 245, .3);
+}
+
+/* Variant: LanceiHub */
+.canal-lancei:hover { border-color: rgba(85, 36, 232, .55); }
+.canal-btn-lancei { background: #5524E8; }
+.canal-card:hover .canal-btn-lancei {
+  background: #4218c2;
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(85, 36, 232, .35);
+}
+
+/* ================================
+   RESPONSIVO
+================================ */
+@media (max-width: 700px) {
+  .wa-banner-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 22px 24px;
+    gap: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .canais-grid { grid-template-columns: 1fr; gap: 16px; }
+  .canal-card-image { height: 160px; }
+  .canal-card-body { padding: 16px 18px 20px; }
+}

@@ -1,7 +1,10 @@
 /* ================================
    PÁGINA DO LOTE
 ================================ */
-.lote-page { min-height: 100vh; padding: 24px 0 48px; }
+.lote-page {
+  min-height: 100vh;
+  padding: 24px 0 48px;
+}
 
 .lote-container {
   width: 100%;
@@ -11,9 +14,11 @@
 }
 
 .lote-inner {
-  background: #1c1c1c;
-  border-radius: 8px;
-  padding: 24px 28px 32px;
+  background: #000;
+  border-radius: 12px;
+  padding: 28px 32px 36px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .55);
 }
 
 /* Badge tipo */
@@ -248,10 +253,10 @@
 
 /* Caixa de descrição */
 .lote-descricao-box {
-  background: #2e2e2e;
-  border-radius: 6px;
-  padding: 16px 18px;
-  border: 1px solid rgba(255,255,255,.08);
+  background: #000;
+  border-radius: 8px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255,255,255,.12);
 }
 .lote-descricao-box h3 {
   font-size: 22px;
@@ -456,15 +461,141 @@
 }
 
 /* ================================
+   CTA REDES SOCIAIS (final da página)
+================================ */
+.lote-redes-cta {
+  margin-top: 48px;
+  padding: 36px 32px 40px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #141414 100%);
+  border: 1px solid rgba(255, 255, 255, .06);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, .4);
+}
+
+.lote-redes-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.lote-redes-titulo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .03em;
+  margin-bottom: 8px;
+}
+
+.lote-redes-sub {
+  font-size: 14px;
+  color: rgba(255, 255, 255, .6);
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.lote-redes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.lote-rede-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  background: #1c1c1c;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 10px;
+  padding: 22px 26px;
+  color: inherit;
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+.lote-rede-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .55);
+}
+.lote-rede-wa:hover { border-color: rgba(37, 211, 102, .5); }
+.lote-rede-yt:hover { border-color: rgba(255, 0, 0, .5); }
+
+.lote-rede-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.lote-rede-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.lote-rede-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, .08);
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.lote-rede-card-titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin: 4px 0 0;
+}
+
+.lote-rede-desc {
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, .65);
+  margin: 0;
+}
+
+.lote-rede-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 22px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  transition: transform .15s, box-shadow .2s;
+}
+.lote-rede-btn-wa { background: #25D366; }
+.lote-rede-btn-yt { background: #ff0000; }
+.lote-rede-card:hover .lote-rede-btn { transform: scale(1.04); }
+.lote-rede-wa:hover .lote-rede-btn-wa { box-shadow: 0 6px 18px rgba(37, 211, 102, .3); }
+.lote-rede-yt:hover .lote-rede-btn-yt { box-shadow: 0 6px 18px rgba(255, 0, 0, .3); }
+
+/* ================================
    RESPONSIVO
 ================================ */
 @media (max-width: 900px) {
   .lote-mapa-enc-row { grid-template-columns: 1fr; }
   .lote-mapa-box iframe { height: 220px; }
   .lote-encerramento { flex-direction: row; justify-content: space-between; }
+  .lote-redes-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 700px) {
-  .lote-inner { padding: 16px 14px 24px; }
+  .lote-inner { padding: 20px 16px 28px; }
+  .lote-redes-cta { padding: 28px 20px 32px; }
+  .lote-rede-card {
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+    padding: 18px 20px;
+  }
+  .lote-rede-btn {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 4px;
+  }
   .lote-container { padding: 0 0.75rem 32px; }
   .lote-content-grid { grid-template-columns: 1fr; }
   .lote-lance-grid { grid-template-columns: 1fr; }
