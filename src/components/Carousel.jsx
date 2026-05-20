@@ -2,12 +2,10 @@ import { useState, useEffect } from 'react'
 import './Carousel.css'
 
 const slides = [
-  { location: 'Bertioga - SP',       image: '/assets/img/banners/Casa em Bertioga (SP).png',          titulo: 'Casa em Bertioga (SP)'          },
-  { location: 'Anaurilândia - MS',   image: '/assets/img/banners/Fazenda em Anaurilândia (MS).png',   titulo: 'Fazenda em Anaurilândia (MS)'   },
-  { location: 'Paranatinga - MT',    image: '/assets/img/banners/Fazenda em Paranatinga (MT).png',    titulo: 'Fazenda em Paranatinga (MT)'    },
-  { location: 'Perdizes - MG',       image: '/assets/img/banners/Fazenda em Perdizes (MG).png',       titulo: 'Fazenda em Perdizes (MG)'       },
-  { location: 'Itaquiraí - MS',      image: '/assets/img/banners/Hotel em Itaquiraí (MS).png',        titulo: 'Hotel em Itaquiraí (MS)'        },
-  { location: 'Itupeva - SP',        image: '/assets/img/banners/Terreno em Itupeva (SP).png',        titulo: 'Terreno em Itupeva (SP)'        },
+  { image: '/assets/img/banners/banner_sala_consolacao_1.png', titulo: 'Sala Comercial na Consolação' },
+  { image: '/assets/img/banners/banner_sala_consolacao_2.png', titulo: 'Sala Comercial na Consolação' },
+  { image: '/assets/img/banners/banner_sala_consolacao_3.png', titulo: 'Sala Comercial na Consolação' },
+  { image: '/assets/img/banners/banner_sala_consolacao_4.png', titulo: 'Sala Comercial na Consolação' },
 ]
 
 export default function Carousel() {

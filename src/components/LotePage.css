@@ -148,7 +148,7 @@
 
 /* Título do lote */
 .lote-titulo {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 18px;
@@ -259,10 +259,10 @@
   border: 1px solid rgba(255,255,255,.12);
 }
 .lote-descricao-box h3 {
-  font-size: 22px;
+  font-size: 14px;
   font-weight: 700;
-  margin-bottom: 12px;
-  letter-spacing: .03em;
+  margin-bottom: 14px;
+  letter-spacing: .04em;
   color: #fff;
   text-transform: uppercase;
 }
@@ -275,8 +275,9 @@
   gap: 9px;
 }
 .lote-topicos li {
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
   color: rgba(255,255,255,.85);
   padding-left: 14px;
   position: relative;
@@ -287,7 +288,7 @@
   left: 0;
   color: #42ad73;
   font-size: 11px;
-  top: 1px;
+  top: 3px;
 }
 .lote-topico-label {
   font-weight: 700;
@@ -458,6 +459,13 @@
   margin-top: 32px;
   margin-bottom: 16px;
   border-radius: 4px;
+}
+
+/* Alinha cards de "Outros Leilões" com a barra do título */
+.lote-container #destaques > .container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
 }
 
 /* ================================

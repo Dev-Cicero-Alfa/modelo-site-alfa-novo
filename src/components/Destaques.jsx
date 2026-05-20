@@ -3,7 +3,7 @@ import { lotes } from '../data/lotes'
 import './Destaques.css'
 
 export default function Destaques({ hideTitle = false, excludeId = null }) {
-  const cards = lotes.filter((l) => l.id !== excludeId)
+  const cards = lotes.filter((l) => l.id !== excludeId).slice(0, 4)
 
   return (
     <section id="destaques">
