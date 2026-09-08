@@ -25,6 +25,9 @@ export default function Destaques({ hideTitle = false, excludeId = null }) {
                   alt={card.titulo}
                   onError={(e) => { e.target.src = '/assets/img/placeholder-image.webp' }}
                 />
+                {card.desconto && (
+                  <span className="card-desconto-tag">{card.desconto} DE DESCONTO</span>
+                )}
               </div>
               <div className="card-content">
                 <p>{card.comarca}</p>

@@ -106,12 +106,12 @@
   text-align: center;
   border: 2px solid rgba(255,255,255,.35);
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
 }
 .lote-pracas-table td:first-child {
   background: rgba(66,173,115,.18);
   font-weight: 700;
-  color: #42ad73;
+  color: #fff;
 }
 .lote-pracas-table tr:nth-child(even) td { background: rgba(255,255,255,.05); }
 .lote-pracas-table tr:nth-child(even) td:first-child { background: rgba(66,173,115,.12); }
@@ -136,7 +136,11 @@
   background: #2e2e2e;
   color: #fff;
   transition: background .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  line-height: 1.2;
 }
 .lote-btn:hover { background: #3a3a3a; }
 .lote-btn.blue {
@@ -418,6 +422,11 @@
   letter-spacing: .03em;
   transition: background .2s;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
 }
 .lote-lance-enviar:hover { background: #155bcb; }
 .lote-incremento-label {
@@ -566,7 +575,10 @@
 }
 
 .lote-rede-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 10px 20px;
   border-radius: 22px;
   font-size: 13px;

@@ -8,6 +8,7 @@ import Newsletter from './components/Newsletter'
 import CanaisDivulgacao from './components/CanaisDivulgacao'
 import Footer from './components/Footer'
 import LotePage from './components/LotePage'
+import LeiloesPage from './components/LeiloesPage'
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/leiloes" element={<LeiloesPage />} />
       <Route path="/lote/:id" element={<LotePage />} />
     </Routes>
   )

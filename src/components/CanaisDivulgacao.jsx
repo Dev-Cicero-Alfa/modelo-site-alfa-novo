@@ -27,6 +27,7 @@ const canais = [
     botao: 'Inscreva-se',
     link: 'https://www.youtube.com/@alfaleiloes1',
     variant: 'yt',
+    imagem: '/assets/img/banners/banner-redes-sociais.png',
     icon: (
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="56" height="56">
         <circle cx="16" cy="16" r="16" fill="#ff0000" />
@@ -93,7 +94,11 @@ function Card({ c }) {
       rel={c.link.startsWith('http') ? 'noopener noreferrer' : undefined}
     >
       <div className={`canal-card-image canal-image-${c.variant}`}>
-        <span className="canal-card-icon">{c.icon}</span>
+        {c.imagem ? (
+          <img className="canal-card-foto" src={c.imagem} alt={c.titulo} />
+        ) : (
+          <span className="canal-card-icon">{c.icon}</span>
+        )}
         <span className={`canal-card-tag canal-tag-${c.variant}`}>{c.badge}</span>
       </div>
       <div className="canal-card-body">

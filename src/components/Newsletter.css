@@ -56,6 +56,11 @@
   cursor: pointer;
   letter-spacing: .04em;
   transition: background .2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
 }
 .btn-form-news-letter:hover { background: #155bcb; }
 

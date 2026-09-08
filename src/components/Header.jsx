@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 export default function Header() {
@@ -44,9 +45,9 @@ export default function Header() {
             </div>
             <div id="menu" className={menuOpen ? 'open' : ''}>
               <ul className="links-wrapper">
-                <li><a className="links-wrapper-item" href="#">Página Inicial</a></li>
+                <li><Link className="links-wrapper-item" to="/">Página Inicial</Link></li>
                 <li><a className="links-wrapper-item" href="#">Quem somos</a></li>
-                <li><a className="links-wrapper-item" href="#">Leilões <span className="leiloes-arrow">▼</span></a></li>
+                <li><Link className="links-wrapper-item" to="/leiloes">Leilões</Link></li>
                 <li><a className="links-wrapper-item" href="#">Como Participar</a></li>
                 <li><a className="links-wrapper-item" href="#">Faça seu leilão Conosco</a></li>
                 <li className="nav-busca-item">

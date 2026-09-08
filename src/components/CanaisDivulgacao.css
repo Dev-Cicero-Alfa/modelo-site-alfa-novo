@@ -108,7 +108,10 @@
 }
 
 .wa-banner-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: #25D366;
   color: #fff;
   font-size: 14px;
@@ -181,6 +184,17 @@
 .canal-card:hover .canal-card-icon {
   transform: scale(1.85);
 }
+.canal-card-foto {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+.canal-card:hover .canal-card-foto {
+  transform: scale(1.06);
+}
 
 /* Tag no canto (badge sobre a "imagem") */
 .canal-card-tag {
@@ -203,6 +217,7 @@
 .canal-image-blog   { background: linear-gradient(135deg, #5a3d05 0%, #2e1f02 100%); }
 .canal-image-curso  { background: linear-gradient(135deg, #0a2d6e 0%, #051538 100%); }
 .canal-image-lancei { background: linear-gradient(135deg, #2c0e7a 0%, #150638 100%); }
+
 
 /* Corpo do card */
 .canal-card-body {
@@ -230,7 +245,10 @@
 }
 
 .canal-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-top: 10px;
   padding: 9px 18px;
   border-radius: 22px;
@@ -277,6 +295,7 @@
   transform: scale(1.04);
   box-shadow: 0 6px 18px rgba(85, 36, 232, .35);
 }
+
 
 /* ================================
    RESPONSIVO

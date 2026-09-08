@@ -83,6 +83,11 @@
   font-size: 14px;
   font-weight: 600;
   transition: filter .15s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
 }
 .button_filter:hover { filter: brightness(.9); }
 

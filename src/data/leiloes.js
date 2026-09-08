@@ -1,0 +1,321 @@
+// Dados reais extraídos da página de Leilões do site (lista completa de leilões abertos).
+export const leiloes = [
+  {
+    id: "10452",
+    imagem: "/assets/img/leiloes/10452-buritis-mg.webp",
+    titulo: "Buritis (MG) - Casa no Bairro Canaã com Terreno de 390m²",
+    tipo: "JUDICIAL",
+    desconto: "40% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "1ª Praça", data: "17/08/2026 às 14:00", lance: "R$ 480.145,32" },
+      { numero: "2ª Praça", data: "09/09/2026 às 14:00", lance: "R$ 288.087,19" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10452/leilao-de-casa-em-buritis-mg/",
+  },
+  {
+    id: "10623",
+    imagem: "/assets/img/leiloes/10623-campinas-sp.webp",
+    titulo: "Campinas (SP) - Apartamento no Bairro Jardim Souza Queiroz com 66m² de Área Útil",
+    tipo: "JUDICIAL",
+    desconto: "40% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "1ª Praça", data: "17/08/2026 às 14:30", lance: "R$ 225.147,86" },
+      { numero: "2ª Praça", data: "09/09/2026 às 14:30", lance: "R$ 135.088,72" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10623/leilao-de-apartamento-em-campinas-sp/",
+  },
+  {
+    id: "10450",
+    imagem: "/assets/img/leiloes/10450-londrina-pr.webp",
+    titulo: "Londrina (PR) - Chevrolet GM/Corsa Sedan Maxx 2004/2005",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista",
+    pracas: [
+      { numero: "1ª Praça", data: "17/08/2026 às 15:30", lance: "R$ 16.372,00" },
+      { numero: "2ª Praça", data: "09/09/2026 às 15:30", lance: "R$ 8.186,00" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10450/londrina-pr-chevrolet-gmcorsa-sedan-maxx-20042005/",
+  },
+  {
+    id: "10440",
+    imagem: "/assets/img/leiloes/10440-itatiba-sp.webp",
+    titulo: "Itatiba (SP) - Terreno no Bairro Portal Giardino com 457m²",
+    tipo: "JUDICIAL",
+    desconto: "40% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "1ª Praça", data: "17/08/2026 às 16:00", lance: "R$ 257.880,05" },
+      { numero: "2ª Praça", data: "11/09/2026 às 16:00", lance: "R$ 154.728,03" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10440/leilao-de-terreno-em-itatiba-sp/",
+  },
+  {
+    id: "10445",
+    imagem: "/assets/img/leiloes/10445-sao-geraldo-do-araguaia-pa.webp",
+    titulo: "São Geraldo do Araguaia (PA) - Fazenda Santa Marta com 395 Hectares",
+    tipo: "ALIENAÇÃO PARTICULAR",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "Praça Única", data: "14/09/2026 às 14:00", lance: "R$ 4.192.424,34" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10445/leilao-de-fazenda-em-sao-geraldo-do-araguaia-pa/",
+  },
+  {
+    id: "9600",
+    imagem: "/assets/img/leiloes/9600-sao-paulo-sp.webp",
+    titulo: "São Paulo (SP) - Imóvel Comercial na Vila Mariana com 414m² de Área Construída",
+    tipo: "EXTRAJUDICIAL",
+    desconto: "30% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "Praça Única", data: "15/09/2026 às 14:00", lance: "R$ 2.300.000,00" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/9600/leilao-de-imovel-comercial-na-vila-mariana-sp/",
+  },
+  {
+    id: "10176",
+    imagem: "/assets/img/leiloes/10176-fortaleza-ce.webp",
+    titulo: "Fortaleza (CE) - Apartamento em Varjota V Jurema com 306m² de Área Privativa",
+    tipo: "JUDICIAL",
+    desconto: "30% de Desconto",
+    condicaoPagamento: "À vista",
+    pracas: [
+      { numero: "1ª Praça", data: "21/08/2026 às 14:00", lance: "R$ 744.879,39" },
+      { numero: "2ª Praça", data: "15/09/2026 às 14:00", lance: "R$ 521.415,57" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10176/leilao-de-apartamento-em-fortaleza-ce/",
+  },
+  {
+    id: "10511",
+    imagem: "/assets/img/leiloes/10511-piedade-sp.webp",
+    titulo: "Piedade (SP) - FIAT STRADA FIRE FLEX 2005/2006",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 14:00", lance: "R$ 22.000,00" },
+      { numero: "2ª Praça", data: "15/09/2026 às 14:00", lance: "R$ 11.000,00" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10511/piedade-sp-fiat-strada-fire-flex-20052006/",
+  },
+  {
+    id: "10672",
+    imagem: "/assets/img/leiloes/10672-sao-paulo-sp.webp",
+    titulo: "São Paulo (SP) - Imóveis Comerciais no Bairro da Mooca com 3.267m² de Área Construída",
+    tipo: "EXTRAJUDICIAL",
+    desconto: "Oportunidade de Investimento",
+    condicaoPagamento: "À vista",
+    pracas: [
+      { numero: "1º Leilão", data: "31/08/2026 às 14:00", lance: "R$ 15.670.822,62" },
+      { numero: "2º Leilão", data: "15/09/2026 às 14:00", lance: "R$ 17.769.287,85" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10672/leilao-de-imoveis-comerciais-no-bairro-da-mooca-sp/",
+  },
+  {
+    id: "9850",
+    imagem: "/assets/img/leiloes/9850-fortaleza-ce.webp",
+    titulo: "Fortaleza (CE) – Terreno no Bairro Vila União com 162m²",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 14:30", lance: "R$ 476.594,95" },
+      { numero: "2ª Praça", data: "15/09/2026 às 14:30", lance: "R$ 238.297,47" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/9850/leilao-de-terreno-em-fortaleza-ce/",
+  },
+  {
+    id: "10447",
+    imagem: "/assets/img/leiloes/10447-ribeirao-preto-sp.webp",
+    titulo: "Ribeirão Preto (SP) - Apartamento no Bairro Geraldo Correia de Carvalho com 44m² de Área Privativa",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 14:30", lance: "R$ 113.837,27" },
+      { numero: "2ª Praça", data: "15/09/2026 às 14:30", lance: "R$ 56.918,64" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10447/leilao-de-apatamento-em-ribeirao-preto-sp/",
+  },
+  {
+    id: "grupo-12",
+    imagem: "/assets/img/leiloes/grupo-12-aguas-lindas-go.webp",
+    titulo: "Águas Lindas (GO) - Terreno no Parque do Bosque com 360m²",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 14:30", lance: "Confira nos lotes" },
+      { numero: "2ª Praça", data: "15/09/2026 às 14:30", lance: "Confira nos lotes" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: 2,
+    link: "https://alfaleiloes.com/leilao/7483/",
+  },
+  {
+    id: "10678",
+    imagem: "/assets/img/leiloes/10678-ibitinga-sp.webp",
+    titulo: "Ibitinga (SP) - Sítio São Benedito com 38 Hectares",
+    tipo: "EXTRAJUDICIAL",
+    desconto: "Oportunidade de Investimento",
+    condicaoPagamento: "À vista",
+    pracas: [
+      { numero: "1º Leilão", data: "31/08/2026 às 14:30", lance: "R$ 3.549.410,55" },
+      { numero: "2º Leilão", data: "15/09/2026 às 14:30", lance: "R$ 3.502.103,22" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10678/leilao-de-sitio-em-ibitinga-sp/",
+  },
+  {
+    id: "10618",
+    imagem: "/assets/img/leiloes/10618-taquara-rs.webp",
+    titulo: "Taquara (RS) - Terreno no Centro com 240m²",
+    tipo: "JUDICIAL",
+    desconto: "60% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 15:00", lance: "R$ 78.028,64" },
+      { numero: "2ª Praça", data: "15/09/2026 às 15:00", lance: "R$ 31.211,46" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10618/leilao-de-terreno-em-taquara-rs/",
+  },
+  {
+    id: "10509",
+    imagem: "/assets/img/leiloes/10509-ribeirao-branco-sp.webp",
+    titulo: "Ribeirão Branco (SP) – Volkswagen VW/NOVO VOYAGE 1.6 2013",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 15:30", lance: "R$ 35.235,00" },
+      { numero: "2ª Praça", data: "15/09/2026 às 15:30", lance: "R$ 17.617,50" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10509/ribeirao-branco-sp-volkswagen-vwnovo-voyage-16-2013/",
+  },
+  {
+    id: "10514",
+    imagem: "/assets/img/leiloes/10514-fortaleza-ce.webp",
+    titulo: "Fortaleza (CE) – Chevrolet Onix 1.0 MT HB 2024/2024",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 15:30", lance: "R$ 69.049,00" },
+      { numero: "2ª Praça", data: "15/09/2026 às 15:30", lance: "R$ 34.524,50" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10514/fortaleza-ce-chevrolet-onix-10-mt-hb-20242024/",
+  },
+  {
+    id: "10621",
+    imagem: "/assets/img/leiloes/10621-itabera-sp.webp",
+    titulo: "Itaberá (SP) – FIAT/PALIO WKADVEN FLEX 2011",
+    tipo: "JUDICIAL",
+    desconto: "40% de Desconto",
+    condicaoPagamento: "À vista",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 15:30", lance: "R$ 37.830,00" },
+      { numero: "2ª Praça", data: "15/09/2026 às 15:30", lance: "R$ 22.698,00" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10621/itabera-sp-fiatpalio-wkadven-flex-2011/",
+  },
+  {
+    id: "10789",
+    imagem: "/assets/img/leiloes/10789-santa-rita-d-oeste-sp.webp",
+    titulo: "Santa Rita D'Oeste (SP) - Casa no Bairro Centro com Terreno de 360m²",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 16:00", lance: "R$ 503.100,00" },
+      { numero: "2ª Praça", data: "15/09/2026 às 16:00", lance: "R$ 251.550,00" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10789/leilao-de-casa-em-santa-rita-d-oeste-sp/",
+  },
+  {
+    id: "10504",
+    imagem: "/assets/img/leiloes/10504-paranaiba-ms.webp",
+    titulo: "Paranaíba (MS) = Car/S. Reboque/ Tanque 1988/1988",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "Á vista ou 25% (Sinal) + 30x",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 14:30", lance: "R$ 70.000,00" },
+      { numero: "2ª Praça", data: "16/09/2026 às 14:30", lance: "R$ 35.000,00" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/10504/paranaiba-ms-cars-reboque-tanque-19881988/",
+  },
+  {
+    id: "9984",
+    imagem: "/assets/img/leiloes/9984-sao-paulo-sp.webp",
+    titulo: "São Paulo (SP) – Imóvel Comercial e Residencial no Bairro Planalto Paulista com Terreno de 509m²",
+    tipo: "JUDICIAL",
+    desconto: "50% de Desconto",
+    condicaoPagamento: "À vista ou 25% (Sinal) + 30X",
+    pracas: [
+      { numero: "1ª Praça", data: "24/08/2026 às 15:00", lance: "R$ 2.966.328,49" },
+      { numero: "2ª Praça", data: "16/09/2026 às 15:00", lance: "R$ 1.483.164,24" }
+    ],
+    status: "Aberto",
+    statusClass: "green",
+    multiLotes: null,
+    link: "https://alfaleiloes.com/lote/9984/leilao-de-imovel-comercial-e-residencial-no-bairro-planalto-paulista-sp/",
+  },
+]
