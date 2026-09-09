@@ -76,6 +76,7 @@ const canais = [
     botao: 'Acessar LanceiHub',
     link: 'https://lanceihub.com/',
     variant: 'lancei',
+    imagem: '/assets/img/banners/lanceihub-banner.png',
     icon: (
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="56" height="56">
         <circle cx="16" cy="16" r="16" fill="#5524E8" />
