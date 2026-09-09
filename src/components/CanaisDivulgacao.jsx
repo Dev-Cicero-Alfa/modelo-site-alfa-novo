@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import Modal from './Modal'
 import './CanaisDivulgacao.css'
 
 const whatsapp = {
@@ -44,6 +46,7 @@ const canais = [
     botao: 'Ver Blog',
     link: '#',
     variant: 'blog',
+    emBreve: true,
     icon: (
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="56" height="56">
         <circle cx="16" cy="16" r="16" fill="#f5a51a" />
@@ -86,13 +89,21 @@ const canais = [
   },
 ]
 
-function Card({ c }) {
+function Card({ c, onEmBreve }) {
+  const handleClick = (e) => {
+    if (c.emBreve) {
+      e.preventDefault()
+      onEmBreve(c.titulo)
+    }
+  }
+
   return (
     <a
       className={`canal-card canal-${c.variant}`}
       href={c.link}
-      target={c.link.startsWith('http') ? '_blank' : undefined}
-      rel={c.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+      onClick={handleClick}
+      target={!c.emBreve && c.link.startsWith('http') ? '_blank' : undefined}
+      rel={!c.emBreve && c.link.startsWith('http') ? 'noopener noreferrer' : undefined}
     >
       <div className={`canal-card-image canal-image-${c.variant}`}>
         {c.imagem ? (
@@ -112,6 +123,8 @@ function Card({ c }) {
 }
 
 export default function CanaisDivulgacao() {
+  const [emBreveTitulo, setEmBreveTitulo] = useState(null)
+
   return (
     <section className="canais-section">
       <div className="canais-header-bar">
@@ -160,10 +173,17 @@ export default function CanaisDivulgacao() {
         {/* Grid 2x2: YT | Blog / Curso | LanceiHub */}
         <div className="canais-grid">
           {canais.map((c) => (
-            <Card key={c.id} c={c} />
+            <Card key={c.id} c={c} onEmBreve={setEmBreveTitulo} />
           ))}
         </div>
       </div>
+
+      {emBreveTitulo && (
+        <Modal title={emBreveTitulo} onClose={() => setEmBreveTitulo(null)}>
+          <p>🚀 Em breve!</p>
+          <p>Estamos preparando esse conteúdo para você. Fique de olho no nosso canal do WhatsApp e nas redes sociais para ser avisado quando estiver disponível.</p>
+        </Modal>
+      )}
     </section>
   )
 }

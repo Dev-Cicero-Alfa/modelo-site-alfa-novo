@@ -31,7 +31,7 @@ export const lotes = [
       '/assets/img/lotes/lote1/foto3.png',
     ],
     status: 'Aberto',
-    statusClass: 'status-aberto',
+    statusClass: 'green',
   },
   {
     id: 2,
@@ -69,7 +69,7 @@ export const lotes = [
       '/assets/img/lotes/lote2/foto7.png',
     ],
     status: 'Aberto',
-    statusClass: 'status-aberto',
+    statusClass: 'green',
   },
   {
     id: 3,
@@ -102,7 +102,7 @@ export const lotes = [
       '/assets/img/lotes/lote3/foto3.png',
     ],
     status: 'Aberto',
-    statusClass: 'status-aberto',
+    statusClass: 'green',
   },
   {
     id: 4,
@@ -135,7 +135,7 @@ export const lotes = [
       '/assets/img/lotes/lote4/foto2.png',
     ],
     status: 'Aberto',
-    statusClass: 'status-aberto',
+    statusClass: 'green',
   },
   {
     id: 5,
@@ -169,6 +169,6 @@ export const lotes = [
       '/assets/img/lotes/lote5/foto3.png',
     ],
     status: 'Aberto',
-    statusClass: 'status-aberto',
+    statusClass: 'green',
   },
 ]

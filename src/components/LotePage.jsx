@@ -5,7 +5,17 @@ import Header from './Header'
 import Filter from './Filter'
 import Footer from './Footer'
 import Destaques from './Destaques'
+import Modal from './Modal'
 import './LotePage.css'
+
+const EXPLICACAO_TIPO = {
+  JUDICIAL:
+    'Leilão determinado pela Justiça para pagamento de dívidas ou cumprimento de decisões judiciais. O processo segue regras específicas do CPC e pode envolver questões de desocupação do imóvel.',
+  EXTRAJUDICIAL:
+    'Leilão realizado fora do âmbito da Justiça, normalmente conduzido por instituições financeiras em casos de inadimplência de contratos com alienação fiduciária (Lei 9.514/97).',
+  'ALIENAÇÃO PARTICULAR':
+    'Venda direta negociada entre as partes, sem necessidade de decisão judicial. Costuma ter um processo de arrematação mais rápido.',
+}
 
 function useCountdown(targetDate) {
   const calc = () => {
@@ -30,6 +40,7 @@ export default function LotePage() {
   const { id } = useParams()
   const lote = lotes.find((l) => l.id === Number(id))
   const [fotoAtiva, setFotoAtiva] = useState(0)
+  const [modalInfoAberto, setModalInfoAberto] = useState(false)
 
   // Usa a data de fechamento da 2ª praça como alvo do countdown
   const praçaFinal = lote?.praças[lote.praças.length - 1]
@@ -66,7 +77,14 @@ export default function LotePage() {
           {/* Badge tipo */}
           <div className="lote-tipo-bar">
             <span className="lote-badge-tipo">{lote.tipo}</span>
-            <span className="lote-badge-dot">?</span>
+            <button
+              type="button"
+              className="lote-badge-dot"
+              onClick={() => setModalInfoAberto(true)}
+              aria-label="Mais informações sobre o lote"
+            >
+              ?
+            </button>
           </div>
 
           {/* Processo / Horário / Local */}
@@ -163,6 +181,13 @@ export default function LotePage() {
                   </li>
                 ))}
               </ul>
+              <button
+                type="button"
+                className="lote-ver-mais"
+                onClick={() => setModalInfoAberto(true)}
+              >
+                Ver mais sobre o lote →
+              </button>
             </div>
           </div>
 
@@ -280,6 +305,19 @@ export default function LotePage() {
 
         </div>
       </div>
+
+      {modalInfoAberto && (
+        <Modal title={`Sobre este lote — ${lote.tipo}`} onClose={() => setModalInfoAberto(false)}>
+          <p>{EXPLICACAO_TIPO[lote.tipo] || 'Informações sobre a modalidade deste leilão.'}</p>
+          <p><strong>Processo:</strong> {lote.processo}</p>
+          <p><strong>Tribunal:</strong> {lote.tribunal}</p>
+          <p><strong>Comarca:</strong> {lote.comarca}</p>
+          <p><strong>Local do leilão:</strong> {lote.local}</p>
+          <p><strong>Endereço:</strong> {lote.endereco}</p>
+          <p><strong>Área:</strong> {lote.area}</p>
+          <p><strong>Incremento mínimo entre lances:</strong> {lote.incremento}</p>
+        </Modal>
+      )}
 
       <Footer />
     </>

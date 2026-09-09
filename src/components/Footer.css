@@ -124,7 +124,10 @@
     border-bottom: 1px solid #ddd;
   }
   .alfa_leiloes_footer-wrapper > div:last-child { border-bottom: none; }
+  .redes-sociais { flex-wrap: wrap; justify-content: center; }
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .alfa_leiloes_footer-wrapper { grid-template-columns: 1fr; }
+  .footer-col-contato { text-align: center; }
+  .col-contato-list li { justify-content: center; }
 }
