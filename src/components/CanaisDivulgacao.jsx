@@ -25,8 +25,8 @@ const canais = [
     badge: '▶ Vídeos',
     titulo: 'Canal no YouTube',
     descricao:
-      'Dicas exclusivas, tours por imóveis e transmissões ao vivo dos nossos leilões. Inscreva-se e ative o sininho!',
-    botao: 'Inscreva-se',
+      'Aprenda sobre o Mercado dos Leilões de maneira gratuita e confiável. Conteúdo novo toda semana.',
+    botao: 'Inscreva-se já!',
     link: 'https://www.youtube.com/@alfaleiloes1',
     variant: 'yt',
     imagem: '/assets/img/banners/banner-redes-sociais.png',
@@ -57,7 +57,7 @@ const canais = [
   {
     id: 'curso',
     badge: '🎓 Educação',
-    titulo: 'Curso Alfa Leilões',
+    titulo: 'Curso Leilão de Verdade',
     descricao:
       'Aprenda a arrematar com segurança: do edital à matrícula do imóvel. Ministrado por especialistas em leilões.',
     botao: 'Saiba Mais',
@@ -155,8 +155,8 @@ export default function CanaisDivulgacao() {
             <div className="wa-banner-body">
               <h4 className="wa-banner-title">Receba novidades em primeira mão!</h4>
               <p className="wa-banner-desc">
-                Fique por dentro dos melhores leilões, datas de abertura e oportunidades exclusivas.
-                Entre para o nosso canal e não perca nenhum imóvel.
+                Quer saber tudo sobre a Leiloaria que mais cresce no Brasil antes de todo mundo?
+                Participe do nosso canal e confira as novidades.
               </p>
               <a
                 className="wa-banner-btn"
