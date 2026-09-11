@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="footer-col-logo">
               <img src="/assets/img/logo-rodape.png" alt="Alfa Leilões" />
               <div className="list-info-localizacao">
-                <p>Rua Curupacé, 260</p>
+                <p>Rua Curupacê, 260</p>
                 <p>Mooca, CEP: 03120-010</p>
                 <p>São Paulo/SP</p>
               </div>

@@ -9,8 +9,8 @@ export default function Newsletter() {
 
             <div className="news-letter-content">
               <p className="nl-title">Não perca nenhuma novidade!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis</p>
+              <p>Encerramentos da semana, curadoria de imóveis imperdíveis, eventos
+              e muito mais. Insira seu melhor contato e conheça mais sobre a Alfa Leilões.</p>
             </div>
 
             <div className="news-letter-form">
