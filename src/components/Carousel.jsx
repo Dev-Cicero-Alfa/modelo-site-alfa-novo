@@ -1,9 +1,9 @@
 import './Carousel.css'
 
-// Banner oficial aprovado (variante 1) — os textos já fazem parte da imagem.
+// Banner oficial aprovado (novo modelo) — os textos já fazem parte da imagem.
 const banner = {
-  image: '/assets/img/banners/banner_sala_consolacao_1.png',
-  titulo: 'Sala Comercial na Consolação',
+  image: '/assets/img/banners/banner_cobertura_duplex_vila_guaianazes.png',
+  titulo: 'Cobertura Duplex no Bairro Vila Guaianazes — São José dos Campos/SP',
 }
 
 export default function Carousel() {
